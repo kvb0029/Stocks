@@ -20,6 +20,22 @@ class Stock:
         """String representation of the stock."""
         return f"{self.name} ({self.ticker}): ${self.price:.2f}"
 
+class DStockOperations:
+    """ functions related to stock management."""
+
+    @staticmethod
+    def analyze_stock(stock):
+        """function to analyze stock (returns nothing)."""
+        logging.info(f"Analyzing {stock.name} ({stock.ticker}). This is a placeholder function.")
+
+    @staticmethod
+    def compare_stocks(stock1, stock2):
+        logging.info(f"Comparing {stock1.name} ({stock1.ticker}) with {stock2.name} ({stock2.ticker}).")
+
+    @staticmethod
+    def predict_stock_performance(stock):
+        logging.info(f"Predicting performance for {stock.name} ({stock.ticker}).")
+
 
 class Portfolio:
     """Manages a collection of stocks owned by a user."""
