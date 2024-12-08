@@ -78,6 +78,21 @@ class Portfolio:
             logging.info(f"{stock.name} ({ticker}) - {quantity} shares @ ${stock.price:.2f} each, Total Value: ${value:.2f}")
         logging.info("")
 
+class DStockOperations:
+    """ functions related to stock management."""
+
+    @staticmethod
+    def analyze_stock(stock):
+        """function to analyze stock (returns nothing)."""
+        logging.info(f"Analyzing {stock.name} ({stock.ticker}). This is a placeholder function.")
+
+    @staticmethod
+    def compare_stocks(stock1, stock2):
+        logging.info(f"Comparing {stock1.name} ({stock1.ticker}) with {stock2.name} ({stock2.ticker}).")
+
+    @staticmethod
+    def predict_stock_performance(stock):
+        logging.info(f"Predicting performance for {stock.name} ({stock.ticker}).")
 
 class Transaction:
     """Represents a transaction for buying or selling stocks."""
