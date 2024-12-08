@@ -1,5 +1,5 @@
 import unittest
-from stock import Stock, Portfolio, User
+from stocks import Stock, Portfolio, User
 
 class TestStockMarketManagementSystem(unittest.TestCase):
     
